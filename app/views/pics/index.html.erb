@@ -1,23 +1,25 @@
-<div class="hero-unit">
-	<h1>Here are all the pictures</h1>
+
+	<h1 class = "custom-pic-header">Here are all the pictures</h1>
+
 	<% @pics.each do |pic| %>
+    <div class="span3">
 
-	Emotion: <%= pic.emotion %>
-</p >
-	Learned: <%= pic.learned %>
-</P>
-	Hour: <%= pic.hour %>
-</p>
+	    <div class="boxy">
 
-<% end %>
-<br />
+			<h4>Hour:</h4> <em><%= pic.hour %></em>
+    		
+			<h5>Emotion:</h5> <em><%= pic.emotion %></em>
+    		   		
+			<h5>Learned:</h5><em> <%= pic.learned %></em>
+			
+    		</P>
+	
+    	</div>
+	</div>
+    
+    <% end %>
+    <br />
 </div>
-
-<%= link_to 'New Pic', new_pic_path %>
-
-
-
-
 
 
 

@@ -8,7 +8,7 @@
 </head>
 <body>
   
-<div class="navbar navbar-inverse">
+<div class="navbar navbarwarning btn--inverse">
    <div class="navbar">
 	
     
@@ -23,15 +23,21 @@
 	    </a>
 	     
 	    <!-- Be sure to leave the brand out there if you want it shown -->
-	    <a class="brand" href="#">Matt's Brand New App</a>
-	     
+	    
+	     	<%= link_to('Matts Brand New App', root_path, :class =>'brand' ) %>
+
+
 	    <!-- Everything you want hidden at 940px or less, place within here -->
 		    <div class="nav-collapse collapse">
 		    <!-- .nav, .navbar-search, .navbar-form, etc -->
 		 <ul class="nav">
-		 	<li>
-		 		<%= link_to('My first link', '#') %>
-		 	</li>	
+		 	
+		 		<%= link_to('My app', pics_path, :class => 'btn btn-warning') %>
+
+
+ 				<%= link_to 'New Pic', new_pic_path, :class => 'btn btn-warning' %>
+
+						 		
 		 </ul>
 
 		    </div>
