@@ -1,8 +1,8 @@
 class CreatePics < ActiveRecord::Migration
   def change
-    create_table :pics do |t|
+    create_table  :pics do |t|
     	t.integer :hour
-    	t.string :emotion
+    	t.string  :emotion
     	t.text    :learned
 
 
